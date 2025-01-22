@@ -7,4 +7,9 @@ Build
 -----
 
     $ rebar3 compile
-# erlsom_test_extension
+# Test
+
+> rebar3 shell
+
+> xsd_test:test().
+
