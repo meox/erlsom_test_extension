@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X1Request xmlns="http://uri.etsi.org/03221/X1/2017/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="urn:3GPP:ns:li:3GPPX1Extensions:r18:v5">
+    <x1RequestMessage xsi:type="ActivateTaskRequest">
+        <admfIdentifier>admfID</admfIdentifier>
+        <neIdentifier>neID</neIdentifier>
+        <messageTimestamp>2017-10-06T18:46:21.247432Z</messageTimestamp>
+        <version>v1.6.1</version>
+        <x1TransactionId>3741800e-971b-4aa9-85f4-466d2b1adc7f</x1TransactionId>
+        <taskDetails>
+            <xId>29f28e1c-f230-486a-a860-f5a784ab9172</xId>
+            <targetIdentifiers>
+                <targetIdentifier>
+                    <e164Number>447700900000</e164Number>
+                </targetIdentifier>
+                <targetIdentifier>
+                    <targetIdentifierExtension>
+                        <Owner>etsi</Owner>
+                        <ext:UPFLIT3TargetIdentifierExtensions>
+                            <ext:UPFLIT3TargetIdentifier>
+                                <ext:PDRID>1000</ext:PDRID>
+                            </ext:UPFLIT3TargetIdentifier>
+                        </ext:UPFLIT3TargetIdentifierExtensions>
+                    </targetIdentifierExtension>
+                </targetIdentifier>
+            </targetIdentifiers>
+            <deliveryType>X3Only</deliveryType>
+            <listOfDIDs>
+                <dId>19867c20-8c94-473e-b9cd-8b72b7b05fd4</dId>
+            </listOfDIDs>
+        </taskDetails>
+    </x1RequestMessage>
+</X1Request>
