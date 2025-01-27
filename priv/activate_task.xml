@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<X1Request xmlns="http://uri.etsi.org/03221/X1/2017/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="urn:3GPP:ns:li:3GPPX1Extensions:r18:v5">
-    <x1RequestMessage xsi:type="ActivateTaskRequest">
-        <admfIdentifier>admfID</admfIdentifier>
-        <neIdentifier>neID</neIdentifier>
-        <messageTimestamp>2017-10-06T18:46:21.247432Z</messageTimestamp>
-        <version>v1.6.1</version>
-        <x1TransactionId>3741800e-971b-4aa9-85f4-466d2b1adc7f</x1TransactionId>
-        <taskDetails>
-            <xId>29f28e1c-f230-486a-a860-f5a784ab9172</xId>
-            <targetIdentifiers>
-                <targetIdentifier>
-                    <e164Number>447700900000</e164Number>
-                </targetIdentifier>
-                <targetIdentifier>
-                    <targetIdentifierExtension>
-                        <Owner>etsi</Owner>
-                        <ext:UPFLIT3TargetIdentifierExtensions>
-                            <ext:UPFLIT3TargetIdentifier>
-                                <ext:PDRID>1000</ext:PDRID>
-                            </ext:UPFLIT3TargetIdentifier>
-                        </ext:UPFLIT3TargetIdentifierExtensions>
-                    </targetIdentifierExtension>
-                </targetIdentifier>
-            </targetIdentifiers>
-            <deliveryType>X3Only</deliveryType>
-            <listOfDIDs>
-                <dId>19867c20-8c94-473e-b9cd-8b72b7b05fd4</dId>
-            </listOfDIDs>
-        </taskDetails>
-    </x1RequestMessage>
-</X1Request>
+<x1:X1Request xmlns:x1="http://uri.etsi.org/03221/X1/2017/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:urn="urn:3GPP:ns:li:3GPPX1Extensions:r18:v5">
+    <x1:x1RequestMessage xsi:type="x1:ActivateTaskRequest">
+        <x1:admfIdentifier>admfID</x1:admfIdentifier>
+        <x1:neIdentifier>neID</x1:neIdentifier>
+        <x1:messageTimestamp>2017-10-06T18:46:21.247432Z</x1:messageTimestamp>
+        <x1:version>v1.6.1</x1:version>
+        <x1:x1TransactionId>3741800e-971b-4aa9-85f4-466d2b1adc7f</x1:x1TransactionId>
+        <x1:taskDetails>
+            <x1:xId>29f28e1c-f230-486a-a860-f5a784ab9172</x1:xId>
+            <x1:targetIdentifiers>
+                <x1:targetIdentifier>
+                    <x1:e164Number>447700900000</x1:e164Number>
+                </x1:targetIdentifier>
+                <x1:targetIdentifier>
+                    <x1:targetIdentifierExtension>
+                        <x1:Owner>etsi</x1:Owner>
+                        <urn:UPFLIT3TargetIdentifierExtensions>
+                            <urn:UPFLIT3TargetIdentifier>
+                                <urn:PDRID>1000</urn:PDRID>
+                            </urn:UPFLIT3TargetIdentifier>
+                            <urn:UPFLIT3TargetIdentifier>
+                                <urn:FSEID>
+                                    <urn:SEID>3</urn:SEID>
+                                    <urn:IPv4Address>192.168.1.1</urn:IPv4Address>
+                                </urn:FSEID>
+                            </urn:UPFLIT3TargetIdentifier>
+                        </urn:UPFLIT3TargetIdentifierExtensions>
+                    </x1:targetIdentifierExtension>
+                </x1:targetIdentifier>
+            </x1:targetIdentifiers>
+            <x1:deliveryType>X3Only</x1:deliveryType>
+            <x1:listOfDIDs>
+                <x1:dId>19867c20-8c94-473e-b9cd-8b72b7b05fd4</x1:dId>
+            </x1:listOfDIDs>
+        </x1:taskDetails>
+    </x1:x1RequestMessage>
+</x1:X1Request>

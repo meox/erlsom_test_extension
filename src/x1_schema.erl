@@ -6,13 +6,22 @@
     enc/1
 ]).
 
+-record(ns, {uri,
+             prefix,
+             efd :: qualified | unqualified % elementFormDefault
+            }).
+
 get_schema() ->
     PrivDir = code:priv_dir(erlsom_test_extension),
     Spec = filename:join(PrivDir, "xsd/urn_3GPP_ns_li_3GPPX1Extensions.xsd"),
     {ok, Schema} = erlsom:compile_xsd_file(
         Spec,
         [
-            {include_dirs, [filename:join(PrivDir, "xsd/")]}
+            {include_dirs, [filename:join(PrivDir, "xsd/")]},
+            {namespaces, [
+                #ns{uri = "urn:3GPP:ns:li:3GPPX1Extensions:r18:v5", prefix = "urn"},
+                #ns{uri = "http://uri.etsi.org/03221/X1/2017/10", prefix = undefined}
+            ]}
         ]
     ),
     persistent_term:put(x1_xsd_schema, Schema),
