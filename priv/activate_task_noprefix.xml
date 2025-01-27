@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<X1Request xmlns:x1="http://uri.etsi.org/03221/X1/2017/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:urn="urn:3GPP:ns:li:3GPPX1Extensions:r18:v5">
+<X1Request xmlns="http://uri.etsi.org/03221/X1/2017/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:urn="urn:3GPP:ns:li:3GPPX1Extensions:r18:v5">
     <x1RequestMessage xsi:type="ActivateTaskRequest">
         <admfIdentifier>admfID</admfIdentifier>
         <neIdentifier>neID</neIdentifier>
