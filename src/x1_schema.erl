@@ -6,10 +6,7 @@
     enc/1
 ]).
 
--record(ns, {uri,
-             prefix,
-             efd :: qualified | unqualified % elementFormDefault
-            }).
+-include_lib("erlsom/src/erlsom.hrl").
 
 get_schema() ->
     PrivDir = code:priv_dir(erlsom_test_extension),
